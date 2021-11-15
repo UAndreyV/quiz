@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Форма + калькулятор</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <form action="POST">
+            <div class="calc">
+                <div class="calc__header">
+                    <h1 class="calc__header-ttitle">Закажи уникальное платье по низкой цене</h1>
+                    <div class="calc__header-counter">
+                        <span class="calc__header-current">1</span>
+                        <span>/</span>
+                        <span class="calc__header-total">10</span>
+                    </div>
+                </div>
+                <div class="calc__body">
+                    <div class="calc__body-item">
+                        <span class="calc__body-item-title">
+                            Выбери крой
+                        </span>
+                        <fieldset>
+                            <input checked type="radio" name="cutChoice" id="cutChoice1" value="200">
+                            <label for="cutChoice1">
+                                <img src="/img/Прямая.jpg" alt="Прямая">
+                                <span>Прямая</span>
+                            </label>
+                            <input type="radio" name="cutChoice" id="cutChoice2" value="0">
+                            <label for="cutChoice2">
+                                <img src="/img/Колокол.jpg" alt="Колокол">
+                                <span>Колокол</span>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div class="calc__body-item hidden">
+                        <span class="calc__body-item-title">
+                            Выбери длину
+                        </span>
+                        <fieldset>
+                            <input checked type="radio" name="lengthChoice" id="lengthChoice1" value="0">
+                            <label for="lengthChoice1">
+                                <img src="/img/Короткая.jpg" alt="Короткая">
+                                <span>Короткая</span>
+                            </label>
+                            <input type="radio" name="lengthChoice" id="lengthChoice2" value="1200">
+                            <label for="lengthChoice2">
+                                <img src="/img/Средняя.jpg" alt="Средняя">
+                                <span>Средняя</span>
+                            </label>
+                            <input type="radio" name="lengthChoice" id="lengthChoice3" value="1400">
+                            <label for="lengthChoice3">
+                                <img src="/img/Длинная.jpg" alt="Длинная">
+                                <span>Длинная</span>
+                            </label>
+                            <input type="radio" name="lengthChoice" id="lengthChoice4" value="1600">
+                            <label for="lengthChoice4">
+                                <img src="/img/Супердлинная.jpg" alt="Супердлинная">
+                                <span>Супердлинная</span>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div class="calc__body-item hidden">
+                        <span class="calc__body-item-title">
+                            Выбери обработку низа
+                        </span>
+                        <fieldset>
+                            <input checked type="radio" name="lowerPartChoice" id="lowerPartChoice1" value="200">
+                            <label for="lowerPartChoice1">
+                                <img src="/img/Шов.jpg" alt="Шов">
+                                <span>Шов</span>
+                            </label>
+                            <input type="radio" name="lowerPartChoice" id="lowerPartChoice2" value="100">
+                            <label for="lowerPartChoice2">
+                                <img src="/img/Обрезанный.jpg" alt="Обрезанный">
+                                <span>Обрезанный</span>
+                            </label>
+                        </fieldset>
+                    </div>
+                    <div class="calc__body-item hidden">
+                        <span class="calc__body-item-title">
+                            Твой выбор
+                        </span>
+                        <div class="calc__body-total-chois">
+
+                        </div>
+                    </div>
+                    <div class="calc__body-item hidden">
+                        <span class="calc__body-item-title">
+                            Укажи контактные данные
+                        </span>
+                        <div class="calc__body-contact">
+                            <input type="text" name="calc__body-item-tel" id="tel">
+                            <label for="calc__body-item-tel">Твой телефон</label>
+                            <input type="text" name="calc__body-item-mail" id="mail">
+                            <label for="calc__body-item-mail">Твой email</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc__bottom">
+                    <p class="calc__bottom-total">Всего: <span>4990</span> р.</p>
+                    <div class="calc__bottom-control">
+                        <button class="btn btn-prev">Назад</button>
+                        <button class="btn btn-next">Вперед</button>
+                        <button class="btn btn-submit hidden">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+
+<!--https://hoolitruly.com/dress#quiz1-->
+</body>
+
+</html>
